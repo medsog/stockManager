@@ -1,0 +1,2 @@
+# stockManager
+manage your stock
