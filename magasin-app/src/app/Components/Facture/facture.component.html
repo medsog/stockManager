@@ -1,0 +1,47 @@
+<form id="rendered-form" >
+    <div class="fb-date form-group field-date-datepiece"><label class="fb-date-label">Date</label>
+
+        <input type="date"
+               class="form-control"
+               name="date-datepiece"
+               id="date-datepiece" [(ngModel)] = "datepiece">
+    </div>
+    <div class="fb-autocomplete form-group field-autocomplete-client">
+        <label class="fb-autocomplete-label">Nom Client</label>
+        <input placeholder="Entrez le nom du client" class="form-control"
+                             id="autocomplete-client-input" [(ngModel)] = "client">
+    </div>
+    <div class="fb-autocomplete form-group field-autocomplete-collaborateur">
+        <label class="fb-autocomplete-label">Collaborateur</label>
+        <input [(ngModel)] = "collaborateur" placeholder="Entrez le nom du collaborateur" class="form-control" id="autocomplete-collaborateur-input">
+    </div>
+    <div class="fb-autocomplete form-group field-autocomplete-depot"><label
+            class="fb-autocomplete-label">Dépôt</label>
+        <input [(ngModel)] = "depot" placeholder="Entrez l'ID du dépôt" class="form-control" id="autocomplete-depot-input">
+    </div>
+    <div class="fb-autocomplete form-group field-autocomplete-affaire">
+        <label class="fb-autocomplete-label">Affaire</label>
+        <input [(ngModel)] = "affaire" placeholder="Entrez l'ID de l'affaire" class="form-control" id="autocomplete-affaire-input">
+    </div>
+    <div class="fb-date form-group field-date-datelivraison">
+        <label class="fb-date-label">Date De Livraison</label>
+        <input [(ngModel)] = "datelivraison" type="date" class="form-control" name="date-datelivraison" id="date-datelivraison">
+    </div>
+    <div class="fb-radio-group form-group field-radio-group-modepaiement">
+        <label class="fb-radio-group-label">Mode de paiement</label>
+        <div class="radio-group">
+            <div class="radio"><label for="radio-group-modepaiement-0"><input name="radio-group-modepaiement"
+                                                                              id="radio-group-modepaiement-0"
+                                                                              value="esp" type="radio">Espèces</label>
+            </div>
+            <div class="radio"><label for="radio-group-modepaiement-1"><input name="radio-group-modepaiement"
+                                                                              id="radio-group-modepaiement-1"
+                                                                              value="chq" type="radio">Chèque</label>
+            </div>
+            <div class="radio"><label for="radio-group-modepaiement-2"><input name="radio-group-modepaiement"
+                                                                              id="radio-group-modepaiement-2"
+                                                                              value="crd" type="radio"
+                                                                              checked="checked">Crédit</label></div>
+        </div>
+    </div>
+</form>
