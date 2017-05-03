@@ -4,15 +4,15 @@
 
 export class LignesDeVente {
 //la representation js de la table lignevente
-    id:number;
-    id_entete:number;
-    id_article_gamme:number;
-    n_serie:string;
-    pu_ht:number = 0;
-    qte:number = 0;
-    tva:number = 0.2;
-    pt_ht:number = 0;
-    pt_ttc:number = 0;
-    remise:number = 0;
-    cmup:number = 0;
+    public id:number;
+    public id_entete:number;
+    public id_article_gamme:number;
+    public n_serie:string;
+    public pu_ht:number = 0;
+    public qte:number = 0;
+    public tva:number = 0.2;
+    public pt_ht:number = 0;
+    public pt_ttc:number = 0;
+    public remise:number = 0;
+    public cmup:number = 0;
 }
