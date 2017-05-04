@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="gc">
+		<class>com.spring.model.MEntetevente</class>
+		<class>com.spring.model.MLignesvente</class>
+		<class>com.spring.model.MReglement</class>
+		<class>com.spring.model.MReglfacture</class>
+		<class>com.spring.model.PModePaiement</class>
+		<class>com.spring.model.PPays</class>
+		<class>com.spring.model.PTva</class>
+		<class>com.spring.model.Ville</class>
+		<class>com.spring.model.SAffaire</class>
+		<class>com.spring.model.SArticle</class>
+		<class>com.spring.model.SArticleGamme</class>
+		<class>com.spring.model.SCategorie</class>
+		<class>com.spring.model.SClient</class>
+		<class>com.spring.model.SCollaborateur</class>
+		<class>com.spring.model.SDepot</class>
+		<class>com.spring.model.SFamille</class>
+		<class>com.spring.model.SFournisseur</class>
+		<class>com.spring.model.SGamme</class>
+		<class>com.spring.model.SRemisePalier</class>
+		<class>com.spring.model.STypeCollab</class>
+	
+	</persistence-unit>
+</persistence>
