@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+<form>
+  <div class="row">
+	  <div class="col-sm-4"/>
+	  <div class=" form-group col-sm-8">
+		<label for="code">Code Produit</label>
+		<input type="text" class="form-control" id="code" placeholder="Code Produit" [(ngModel)]='code'>
+	  </div>
+  </div>
+  <div class="row">
+  	  <div class="col-sm-4"/>
+	  <div class=" form-group col-sm-8">
+		<label for="description">Déscription du produit</label>
+		<input type="text" class="form-control" id="description" placeholder="Déscription du produit" [(ngModel)]='description'>
+	  </div>
+  </div>
+  <div class="row">
+  	  <div class="col-sm-4"/>
+	  <div class=" form-group col-sm-8">
+		<label for="taille">Taille du produit</label>
+		<input type="text" class="form-control" id="taille" placeholder="Taille du produit" [(ngModel)]='taille'>
+	  </div>
+  </div>
+  <div class="row">
+  	  <div class="col-sm-4"/>
+	  <div class="form-group col-sm-8">
+		<label for="couleur">Couleur du Produit</label>
+		<input type="text" class="form-control" id="couleur" placeholder="Couleur du Produit" [(ngModel)]='couleur'>
+	  </div>
+  </div>
+  <div class="row">
+  	  <div class="col-sm-4"/>
+	  <div class="form-group col-sm-8">
+		<label for="prixAchat">Prix d'achat</label>
+		<input type="text" class="form-control" id="prixAchat" placeholder="Prix d'achat" [(ngModel)]='prixAchat'>
+	  </div>
+  </div>
+  <div class="row">
+  	  <div class="col-sm-4"/>
+	  <div class="form-group col-sm-8">
+		<label for="prixVente">Prix de Vente (proposé)</label>
+		<input type="text" class="form-control" id="prixVente" placeholder="Prix de Vente (proposé)" [(ngModel)]='prixVente'>
+	  </div>
+  </div>
+  <button type="submit" class="btn btn-default">Valider</button>
+</form>
+</div>
+
+</body>
+</html>
+
+
