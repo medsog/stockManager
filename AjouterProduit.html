@@ -10,53 +10,64 @@
 </head>
 <body>
 
-<div class="container">
-<form>
-  <div class="row">
-	  <div class="col-sm-4"/>
-	  <div class=" form-group col-sm-8">
-		<label for="code">Code Produit</label>
-		<input type="text" class="form-control" id="code" placeholder="Code Produit" [(ngModel)]='code'>
-	  </div>
-  </div>
-  <div class="row">
-  	  <div class="col-sm-4"/>
-	  <div class=" form-group col-sm-8">
-		<label for="description">Déscription du produit</label>
-		<input type="text" class="form-control" id="description" placeholder="Déscription du produit" [(ngModel)]='description'>
-	  </div>
-  </div>
-  <div class="row">
-  	  <div class="col-sm-4"/>
-	  <div class=" form-group col-sm-8">
-		<label for="taille">Taille du produit</label>
-		<input type="text" class="form-control" id="taille" placeholder="Taille du produit" [(ngModel)]='taille'>
-	  </div>
-  </div>
-  <div class="row">
-  	  <div class="col-sm-4"/>
-	  <div class="form-group col-sm-8">
-		<label for="couleur">Couleur du Produit</label>
-		<input type="text" class="form-control" id="couleur" placeholder="Couleur du Produit" [(ngModel)]='couleur'>
-	  </div>
-  </div>
-  <div class="row">
-  	  <div class="col-sm-4"/>
-	  <div class="form-group col-sm-8">
-		<label for="prixAchat">Prix d'achat</label>
-		<input type="text" class="form-control" id="prixAchat" placeholder="Prix d'achat" [(ngModel)]='prixAchat'>
-	  </div>
-  </div>
-  <div class="row">
-  	  <div class="col-sm-4"/>
-	  <div class="form-group col-sm-8">
-		<label for="prixVente">Prix de Vente (proposé)</label>
-		<input type="text" class="form-control" id="prixVente" placeholder="Prix de Vente (proposé)" [(ngModel)]='prixVente'>
-	  </div>
-  </div>
-  <button type="submit" class="btn btn-default">Valider</button>
-</form>
-</div>
+	<div class="container">
+	<p class="row"></p>
+	  <fieldset>
+			<legend>Ajouter un produit</legend>
+			<form>
+			  <div class="form-group row">
+				  <div class="col-sm-2"></div>
+				  <div class="col-sm-4">
+					<label for="code">Code Produit</label>
+					<input type="number" class="form-control" id="code" placeholder="Code Produit" [(ngModel)]='code' (change)='codeOnchange($event)'>
+				  </div>
+				  <div class="col-sm-6"></div>
+			  </div>
+			  <div class="form-group  row">
+				  <div class="col-sm-2"></div>
+				  <div class="col-sm-4">
+					<label for="description">Déscription du produit</label>
+					<input type="text" class="form-control" id="description" placeholder="Déscription du produit" [(ngModel)]='description' (change)='descriptionOnchange($event)'>
+				  </div>
+				  <div class="col-sm-6"></div>
+			  </div>
+			  <div class="form-group row">
+				  <div class="col-sm-2"></div>
+				  <div class="col-sm-4">
+					<label for="taille">Taille du produit</label>
+					<input type="text" class="form-control" id="taille" placeholder="Taille du produit" [(ngModel)]='taille' (change)='tailleOnchange($event)'>
+				  </div>
+				  <div class="col-sm-6"></div>
+			  </div>
+			  <div class="form-group row">
+				  <div class="col-sm-2"></div>
+				  <div class="col-sm-4">
+					<label for="couleur">Couleur du Produit</label>
+					<input type="text" class="form-control" id="couleur" placeholder="Couleur du Produit" [(ngModel)]='couleur' (change)='couleurOnchange($event)'>
+				  </div>
+				  <div class="col-sm-6"></div>
+			  </div>
+			  <div class="form-group row">
+				  <div class="col-sm-2"></div>
+				  <div class="col-sm-4">
+					<label for="prixAchat">Prix d'achat</label>
+					<input type="text" class="form-control" id="prixAchat" placeholder="Prix d'achat" [(ngModel)]='prixAchat' (change)='prixAchatOnchange($event)'>
+				  </div>
+				  <div class="col-sm-6"></div>
+			  </div>
+			  <div class="form-group row">
+				  <div class="col-sm-2"></div>
+				  <div class="col-sm-4">
+					<label for="prixVente">Prix de Vente (proposé)</label>
+					<input type="text" class="form-control" id="prixVente" placeholder="Prix de Vente (proposé)" [(ngModel)]='prixVente' (change)='prixVenteOnchange($event)'>
+				  </div>
+				  <div class="col-sm-6"></div>
+			  </div>
+			  <div class="col-sm-2"></div>
+			  <button type="submit" class="btn btn-primary col-sm-2">Valider</button>
+			</form>
+		</fieldset>	
+	</div>
 
 </body>
 </html>
